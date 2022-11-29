@@ -1,36 +1,14 @@
-# Microverse-WebPack-Template
+# JavaScript capstone project: Our API-based webapp
 Git/GitHub flow, webpack, linters, and workflows.
 
 <a name="readme-top"> </a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
 
   <img src="logo.png" alt="logo" width="140"  height="auto"/>
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>JavaScript capstone project</b></h3>
 
 </div>
 
@@ -62,26 +40,15 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> Description.
 
-**[your_project__name]** is a...
+**[The JavaScript capstone project]** is about building your own web application based on an external API. You will select an API that provides data about a topic that you like and then build the web app around it. The web app will have 2 or 3 user interfaces (depending on the size of your team):
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> LAMP Stack (Linux, Apache, MySQL, PHP)
-
-> MEAN Stack (MongoDB, Express.js, Angular.js, Node.js)
-
-> MERN Stack (MongoDB, Express.js, React.js, Node.js)
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+> Stack (MongoDB, Express.js, React.js, Node.js)
 
 <details>
   <summary>Server</summary>
@@ -90,22 +57,14 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Add to list]**
+- **[Comment ot single item]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,9 +72,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> link to our deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://github.com/PeteUgwu/Group-capstone/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,7 +154,9 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
-👤 **Author 2*
+1. Pete Ugwu
+
+- GitHub: [@githubhandle](https://https://github.com/PeteUgwu)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -204,11 +165,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> features we will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[css styles]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,8 +186,6 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 > We encourage you to support this project
-
-If you like this project, kindly donate a token at [Paypal]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -251,11 +208,6 @@ I would like to thank microverse student team for the resorces availed.
 - **What is front-end, HTML, CSS and JavaScript**
   - The front end refers to the parts of the application that users (also known as "clients") interact with directly
   - As a front-end dev, you'll implement these tasks primarily using HTML to define the structure of web pages, CSS to add styling, and JavaScript to add interactivity.
-
-- **What is back-end and Full stack**
-  - The back end refers to the parts of the application that run behind the scenes and aren't presented directly to the user/client.
-  - The back end typically includes a web server which handles HTTP connections received from the front-end client (usually a web browser)
-  - Full stack simply includes both the front end AND back end!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
