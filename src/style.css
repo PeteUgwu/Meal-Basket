@@ -1,5 +1,7 @@
+@import "pop.css";
+
 body {
-  background-color: whitesmoke;
+  background-color: #fff;
   font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif !important;
 }
 
