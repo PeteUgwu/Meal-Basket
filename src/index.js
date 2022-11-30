@@ -1,6 +1,6 @@
 import './style.css';
 import $ from 'jquery';
-import loadmeals from './meals.js';
+import loadmeals from './modules/meals.js';
 
 function randomValue(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
