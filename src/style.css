@@ -88,7 +88,7 @@ main .grid-item {
 }
 
 .food > div {
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
 .food-name {
@@ -99,11 +99,15 @@ main .grid-item {
   float: right;
 }
 
+.food-name .like:hover {
+  transform: scale(120%);
+}
+
 .likes {
   text-align: right;
 }
 
-input[type="button"] {
+.grid-container input[type="button"] {
   width: 100%;
   border: 1px black solid;
   line-height: 1em;
@@ -111,6 +115,12 @@ input[type="button"] {
   font-size: large;
   color: gray;
   padding: 0.5em;
+}
+
+.grid-container input[type="button"]:hover {
+  outline: none;
+  background: rgb(205, 158, 41);
+  color: white;
 }
 
 footer {
