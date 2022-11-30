@@ -2,11 +2,12 @@ import ht2 from '../heart2.png';
 import ht from '../heart.png';
 import countFoods from './countFoods.js';
 import { addlikes, getlikes } from './likes.js';
+import { addPopEvent } from './popup.js';
 
 const container = document.querySelector('.grid-container');
 
-const loadPopUp = (element) => {
-  alert('load pop up');
+const loadPopUp = (food) => {
+  popup(food);
 };
 
 const like = (element) => {
@@ -34,13 +35,14 @@ const innerData = (element) => {
             </div>
         </div>
     </div>`;
-  div.querySelector('input[type="button"]').addEventListener('click', () => {
+  div.querySelectorAll('input[type="button"]').addEventListener('click', (e) => {
     loadPopUp(element);
   });
   div.querySelector('.like').addEventListener('click', (e) => {
     like(e.target.parentNode.parentNode.parentNode.querySelector('#idCategory').innerText);
   });
   container.appendChild(div);
+  addPopEvent();
 };
 
 const fillDom = (categories) => {

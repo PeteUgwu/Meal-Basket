@@ -1,4 +1,6 @@
-@import "pop.css";
+*{
+  box-sizing: border-box;
+}
 
 body {
   background-color: #fff;
@@ -145,3 +147,93 @@ footer .f-bottom {
   width: 100%;
   height: 2em;
 }
+
+.pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3%;
+  color: rgb(71, 68, 68);
+  overflow: auto;
+  height: 100%;
+}
+
+.popup-details {
+  border: 1px solid red;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 5rem;
+  margin: 3%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 86%;
+  padding-bottom: 5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex h4 {
+  text-align: left;
+}
+
+.meal {
+  text-align: center;  
+}
+
+.closebtn {
+  position: relative;
+  align-self: end;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(71, 68, 68);
+  margin-right: 4rem;
+  margin-top: 2rem;
+}
+
+h2, h3{
+  text-align: center;
+}
+
+#form {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+::placeholder {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.name-field, textarea {
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px;
+  padding: 5px;
+}
+
+.name-field, textarea, .comment-btn {
+  border: 3px solid rgb(71, 68, 68);
+}
+
+.comment-btn {
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 3px 3px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(71, 68, 68);
+  background-color: #fff;
+}
+
+
