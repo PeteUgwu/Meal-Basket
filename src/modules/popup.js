@@ -1,3 +1,5 @@
+import { generateComment } from './comment.js';
+
 export const fetchMealData = async (id) => {
   const mealDbApi = `https://themealdb.com/api/json/v1/1/lookup.php?i=${id}`;
   const response = await fetch(`${mealDbApi}`);
@@ -32,7 +34,7 @@ const createPopHtml = (mealDetails) => {
             </div>
             <h3>Comments (2)</h3>
             <div class="comments-div">
-            <p>05/11/2022 Carl: I'd love to eat it again</p>  
+              
             </div>
             <h3>Add a Comment</h3>
             <form method="post" class="flex" id="form">
@@ -50,6 +52,11 @@ const showPopup = async (id) => {
 
   const mealDetails = await fetchMealData(id);
   popupSection.append(createPopHtml(mealDetails[0]));
+
+  const commentDiv = document.querySelector('.comments-div');
+  const commentParagraph = await generateComment(id);
+  commentDiv.append(commentParagraph);
+
   popupSection.style.display = 'block';
   addCloseEvent();
 };
