@@ -100,6 +100,10 @@ main .grid-item {
   font-size: small;
 }
 
+.food img {
+  border-radius: 5px;
+}
+
 .food > div {
   margin-bottom: 2em;
 }
@@ -121,19 +125,20 @@ main .grid-item {
 }
 
 .grid-container input[type="button"] {
-  width: 100% !important;
-  border: 1px black solid !important;
-  line-height: 1em !important;
-  outline: none !important;
-  font-size: large !important;
-  color: gray !important;
-  padding: 0.5em !important;
+  width: 100%;
+  border: 1px black solid;
+  line-height: 1em;
+  outline: none;
+  font-size: large;
+  color: gray;
+  padding: 0.5em;
+  border-radius: 5px;
 }
 
 .grid-container input[type="button"]:hover {
-  outline: none !important;
-  background: rgb(205, 158, 41) !important;
-  color: white !important;
+  outline: none;
+  background: rgb(205, 158, 41);
+  color: white;
 }
 
 footer {
@@ -176,7 +181,7 @@ footer .f-bottom {
   position: absolute;
   display: flex;
   justify-content: center;
-  border-radius: 3rem;
+  border-radius: 10px;
   margin: 3%;
   flex-direction: column;
   align-items: center;

@@ -62,7 +62,7 @@ const createPopHtml = (mealDetails) => {
   return popupDetails;
 };
 
-const showPopup = async (id) => {
+export const showPopup = async (id) => {
   const popupSection = document.querySelector('.pop-up');
   popupSection.innerHTML = ' ';
 
@@ -76,12 +76,4 @@ const showPopup = async (id) => {
   popupSection.style.display = 'block';
   addCommentEvent();
   addCloseEvent();
-};
-
-export const addPopEvent = () => {
-  const commentBtns = document.querySelectorAll('.comment-btn');
-  commentBtns.forEach((button) => button.addEventListener('click', (ev) => {
-    ev.preventDefault();
-    showPopup(button.id);
-  }));
 };
