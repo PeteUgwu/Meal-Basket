@@ -6,25 +6,25 @@ import { addPopEvent } from './popup.js';
 
 const container = document.querySelector('.grid-container');
 
-const loadPopUp = (food) => {
-  popup(food);
+const loadPopUp = (id) => {
+  popup(id);
 };
 
 const like = (element) => {
   addlikes(element);
 };
 
-const innerData = (element) => {
+const innerData = (meal) => {
   const div = document.createElement('div');
   div.innerHTML = `
     <div class="grid-item">
         <div class="food">
             <div>
-               <span style="display: none" id="idCategory">${element.idCategory}</span>
-                <img src="${element.strCategoryThumb}" height="200" alt="">
+               <span style="display: none" id="idCategory">${meal.idMeal}</span>
+                <img src="${meal.strMealThumb}" height="200" alt="">
             </div>
             <div class="food-name">
-                <span>${element.strCategory}</span>
+                <span>${meal.strMeal}</span>
                 <span class="like"><img src="${ht2}" alt="" width="15" height="15" srcset=""></span>
             </div>
             <div class="likes">
@@ -35,8 +35,8 @@ const innerData = (element) => {
             </div>
         </div>
     </div>`;
-  div.querySelectorAll('input[type="button"]').addEventListener('click', (e) => {
-    loadPopUp(element);
+  div.querySelector('input[type="button"]').addEventListener('click', () => {
+    loadPopUp(meal.idMeal);
   });
   div.querySelector('.like').addEventListener('click', (e) => {
     like(e.target.parentNode.parentNode.parentNode.querySelector('#idCategory').innerText);
@@ -45,12 +45,12 @@ const innerData = (element) => {
   addPopEvent();
 };
 
-const fillDom = (categories) => {
+const fillDom = (meals) => {
   container.innerHTML = '';
-  categories.forEach((element) => {
-    innerData(element);
+  meals.forEach((meal) => {
+    innerData(meal);
   });
-  countFoods(categories.length);
+  countFoods(meals.length);
   getlikes();
 };
 
