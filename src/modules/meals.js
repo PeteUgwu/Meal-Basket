@@ -3,10 +3,10 @@ import { fillDom } from './Dom.js';
 
 const loadmeals = async () => {
   await $.get(
-    `${process.env.URL}categories.php`,
+    `${process.env.URL}filter.php?a=Canadian`,
     (data, status) => {
       if (status === 'success') {
-        fillDom(data.categories);
+        fillDom(data.meals);
       }
     },
   );
