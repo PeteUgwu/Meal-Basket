@@ -1,4 +1,4 @@
-import $, { data, status } from 'jquery';
+import $ from 'jquery';
 import ht from '../heart.png';
 
 const addlikes = async (itemId) => {
