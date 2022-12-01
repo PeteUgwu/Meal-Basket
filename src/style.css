@@ -124,6 +124,10 @@ main .grid-item {
   text-align: right;
 }
 
+.likes-count span {
+  color: gray;
+}
+
 .grid-container input[type="button"] {
   width: 100%;
   border: 1px black solid;
