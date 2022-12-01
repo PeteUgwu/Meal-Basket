@@ -6,8 +6,8 @@ import { addPopEvent } from './popup.js';
 
 const container = document.querySelector('.grid-container');
 
-const loadPopUp = (meal) => {
-  popup(meal);
+const loadPopUp = (id) => {
+  popup(id);
 };
 
 const like = (element) => {
@@ -36,7 +36,7 @@ const innerData = (meal) => {
         </div>
     </div>`;
   div.querySelector('input[type="button"]').addEventListener('click', () => {
-    loadPopUp(meal);
+    loadPopUp(meal.idMeal);
   });
   div.querySelector('.like').addEventListener('click', (e) => {
     like(e.target.parentNode.parentNode.parentNode.querySelector('#idCategory').innerText);
