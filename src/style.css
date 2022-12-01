@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -25,6 +25,9 @@ header > div {
   display: flex;
   align-items: center;
   gap: 8em;
+  position: fixed;
+  background: #fff;
+  top: 0;
 }
 
 .fd-number {
@@ -182,12 +185,22 @@ footer .f-bottom {
   justify-content: space-between;
 }
 
+h4 {
+  margin-right: 2rem;
+  align-items: center;
+}
+
 .flex h4 {
   text-align: left;
 }
 
 .meal {
-  text-align: center;  
+  text-align: center;
+}
+
+.meal img {
+  width: 450px;
+  height: 300px;
 }
 
 .closebtn {
@@ -199,9 +212,11 @@ footer .f-bottom {
   color: rgb(71, 68, 68);
   margin-right: 4rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
-h2, h3{
+h2,
+h3 {
   text-align: center;
 }
 
@@ -215,25 +230,31 @@ h2, h3{
   padding: 5px;
 }
 
-.name-field, textarea {
+.name-field,
+textarea {
   margin-bottom: 1rem;
   box-shadow: 1px 1px;
   padding: 5px;
 }
 
-.name-field, textarea, .comment-btn {
+.name-field,
+textarea,
+.comment-btn {
   border: 3px solid rgb(71, 68, 68);
 }
 
 .comment-btn {
   cursor: pointer;
   padding: 5px;
-  border: 2px solid black;
+  border: 1px solid black;
   box-shadow: 3px 3px;
-  font-size: 1.5rem;
   font-weight: bold;
-  color: rgb(71, 68, 68);
+  color: darkgrey;
   background-color: #fff;
 }
 
-
+.comment-btn:hover {
+  outline: none;
+  background: rgb(205, 158, 41);
+  color: white;
+}

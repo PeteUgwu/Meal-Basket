@@ -6,9 +6,9 @@ import { addPopEvent } from './popup.js';
 
 const container = document.querySelector('.grid-container');
 
-const loadPopUp = (id) => {
-  popup(id);
-};
+// const loadPopUp = (id) => {
+//   addPopEvent(id.idMeal);
+// };
 
 const like = (element) => {
   addlikes(element);
@@ -31,18 +31,17 @@ const innerData = (meal) => {
                 <span class="likes-count">0<span> likes</span></span>
             </div>
             <div>
-                <input type="button" value="comments">
+             <button class="comment-btn" id="${meal.idMeal}">comments</button>
             </div>
         </div>
     </div>`;
-  div.querySelector('input[type="button"]').addEventListener('click', () => {
-    loadPopUp(meal.idMeal);
-  });
+  // div.querySelector('.comment-btn').addEventListener('click', () => {
+  //   loadPopUp(meal.idMeal);
+  // });
   div.querySelector('.like').addEventListener('click', (e) => {
     like(e.target.parentNode.parentNode.parentNode.querySelector('#idCategory').innerText);
   });
   container.appendChild(div);
-  addPopEvent();
 };
 
 const fillDom = (meals) => {
@@ -52,6 +51,7 @@ const fillDom = (meals) => {
   });
   countFoods(meals.length);
   getlikes();
+  addPopEvent();
 };
 
 export { fillDom, innerData };
