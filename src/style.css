@@ -167,11 +167,11 @@ footer .f-bottom {
 }
 
 .popup-details {
-  border: 1px solid red;
+  border: 1px solid black;
   position: absolute;
   display: flex;
   justify-content: center;
-  border-radius: 5rem;
+  border-radius: 3rem;
   margin: 3%;
   flex-direction: column;
   align-items: center;
@@ -243,7 +243,8 @@ textarea,
   border: 3px solid rgb(71, 68, 68);
 }
 
-.comment-btn {
+.comment-btn,
+.add-comment-btn {
   cursor: pointer;
   padding: 5px;
   border: 1px solid black;
@@ -253,6 +254,7 @@ textarea,
   background-color: #fff;
 }
 
+.add-comment-btn:hover,
 .comment-btn:hover {
   outline: none;
   background: rgb(205, 158, 41);

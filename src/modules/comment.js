@@ -8,10 +8,14 @@ export const getComments = async (id) => {
   return data;
 };
 
-const createCommentHtml = () => {
+// eslint-disable-next-line
+const createCommentHtml = ({ creation_date, username, comment }) => {
+
+  // eslint-disable-next-line
+    let creationDate = creation_date
   const commentSpan = document.createElement('span');
   commentSpan.innerText = `
-      05/11/2022 Carl: I'd love to eat it again  
+      ${creationDate} ${username}: ${comment}  
     `;
   return commentSpan;
 };
@@ -33,4 +37,21 @@ export const generateComment = async (id) => {
   }
 
   return commentParagraph;
+};
+
+export const addNewComment = async (id, user, comment) => {
+  const newComment = {
+    item_id: id,
+    username: user,
+    comment,
+  };
+  const res = await fetch(`${process.env.BaseURL}comments`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newComment),
+  });
+  //   const data = await res.json();
+  return res;
 };
