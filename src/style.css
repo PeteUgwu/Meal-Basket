@@ -48,6 +48,10 @@ header > div {
   white-space: nowrap;
 }
 
+.fd-categories:hover {
+  color: black;
+}
+
 .bubbles {
   display: inline-block;
   font-family: arial;
@@ -66,7 +70,7 @@ header > div {
   position: absolute;
   border-radius: 100%;
   bottom: 10px;
-  background-color: rgb(93, 79, 79);
+  background-color: rgba(93, 79, 79, 0.568);
   z-index: 1;
 }
 
