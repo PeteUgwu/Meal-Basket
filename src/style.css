@@ -39,6 +39,7 @@ header > div {
 .fd-number span {
   font-weight: bold;
   color: red;
+  padding: 0 0.5em;
 }
 
 .fd-categories {
