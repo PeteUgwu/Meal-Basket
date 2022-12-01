@@ -19,7 +19,7 @@ $(document).ready(($) => {
     $('.individual-bubble').animate({
       bottom: '100%',
       opacity: '-=0.7',
-    }, 15000, () => {
+    }, 30000, () => {
       $(this).remove();
     });
   }, 350);
