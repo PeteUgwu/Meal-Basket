@@ -26,7 +26,8 @@ header > div {
   align-items: center;
   gap: 8em;
   position: fixed;
-  background: #fff;
+  background: hsl(240deg 6% 87%);
+  border-bottom: 1px solid black;
   top: 0;
 }
 
@@ -213,6 +214,10 @@ h4 {
   margin-right: 4rem;
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.no-comment {
+  font-style: italic;
 }
 
 h2,
