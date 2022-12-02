@@ -67,6 +67,16 @@ Git/GitHub flow, webpack, linters, and workflows.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## LINK TO THE KANBAN BOARD
+
+- [Kanban Board](https://github.com/PeteUgwu/Group-capstone/projects/1)
+
+## LINK TO CODE REVIEW WE ARE PROUD OF
+
+- Peter [Code Review](https://github.com/PeteUgwu/Group-capstone/pull/51)
+
+- Pius [Code Review]()
+
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -134,7 +144,7 @@ You can deploy this project on Git:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author 1**
+👤 **Authors/Team members**
 
 1. Ssekweyama Pius
 
@@ -142,7 +152,7 @@ You can deploy this project on Git:
 - Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
-2. Pete Ugwu
+2. Peter Ugwu
 
 - GitHub: [@PeteUgwu](https://github.com/PeteUgwu)
 - Twitter: [@Petrus4Charles](https://twitter.com/Petrus4Charles)
