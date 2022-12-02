@@ -47,7 +47,7 @@ Git/GitHub flow, webpack, linters, and workflows.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Stack (Express.js, Node.js, Webpack)
+> Stack (HTML, CSS, JAVASCRIPT)
 
 <details>
   <summary>Server</summary>
@@ -62,8 +62,8 @@ Git/GitHub flow, webpack, linters, and workflows.
 
 > key features of the application.
 
-- **[Add to list]**
-- **[Comment ot single item]**
+- **[Item list that can be "liked"]**
+- **[Comment on single item]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
