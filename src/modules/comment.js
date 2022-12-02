@@ -14,6 +14,7 @@ const createCommentHtml = ({ creation_date, username, comment }) => {
   // eslint-disable-next-line
     let creationDate = creation_date
   const commentSpan = document.createElement('span');
+  commentSpan.className = 'comment-sp';
   commentSpan.innerText = `
       ${creationDate} ${username}: ${comment}  
     `;
