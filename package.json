@@ -9,6 +9,10 @@
     "start": "webpack serve --open",
     "server": "node server.js"
   },
+  "jest": {
+    "resetMocks": false,
+    "testEnvironment": "jsdom"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SSEKPIUS/Microverse-WebPack-Template.git"

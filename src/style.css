@@ -39,6 +39,7 @@ header > div {
 .fd-number span {
   font-weight: bold;
   color: red;
+  padding: 0 0.5em;
 }
 
 .fd-categories {
@@ -99,6 +100,10 @@ main .grid-item {
   font-size: small;
 }
 
+.food img {
+  border-radius: 5px;
+}
+
 .food > div {
   margin-bottom: 2em;
 }
@@ -119,20 +124,26 @@ main .grid-item {
   text-align: right;
 }
 
+.likes-count span {
+  color: gray;
+}
+
 .grid-container input[type="button"] {
-  width: 100% !important;
-  border: 1px black solid !important;
-  line-height: 1em !important;
-  outline: none !important;
-  font-size: large !important;
-  color: gray !important;
-  padding: 0.5em !important;
+  width: 100%;
+  border: 1px black solid;
+  line-height: 1em;
+  outline: none;
+  font-size: large;
+  color: gray;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .grid-container input[type="button"]:hover {
-  outline: none !important;
-  background: rgb(205, 158, 41) !important;
-  color: white !important;
+  outline: none;
+  background: rgb(205, 158, 41);
+  color: white;
 }
 
 footer {
@@ -175,7 +186,7 @@ footer .f-bottom {
   position: absolute;
   display: flex;
   justify-content: center;
-  border-radius: 3rem;
+  border-radius: 10px;
   margin: 3%;
   flex-direction: column;
   align-items: center;
@@ -248,18 +259,24 @@ textarea {
 .name-field,
 textarea,
 .comment-btn {
-  border: 3px solid rgb(71, 68, 68);
+  border: 1px solid rgb(71, 68, 68);
+  border-radius: 5px;
 }
 
 .comment-btn,
 .add-comment-btn {
   cursor: pointer;
-  padding: 5px;
+  padding: 10px 20px;
   border: 1px solid black;
   box-shadow: 3px 3px;
   font-weight: bold;
   color: darkgrey;
   background-color: #fff;
+  border-radius: 5px;
+}
+
+.comment-sp {
+  font-style: italic;
 }
 
 .add-comment-btn:hover,

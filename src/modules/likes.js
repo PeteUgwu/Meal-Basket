@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import ht from '../heart.png';
+import loadmeals from './meals.js';
 
 const addlikes = async (itemId) => {
   await $.post(
@@ -9,7 +10,7 @@ const addlikes = async (itemId) => {
     },
     (data, status) => {
       if (status === 'success') {
-        window.location.reload();
+        loadmeals();
       }
     },
   );
