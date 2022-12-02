@@ -24,7 +24,7 @@ describe("item comment count", () => {
       const comments = [
       {
             creationDate: "02/12/2022", 
-            username: "VPee", 
+            username: "TeePee", 
             comment: "yeah, here"
       },
       {
