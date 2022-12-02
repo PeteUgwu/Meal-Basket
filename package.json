@@ -4,10 +4,14 @@
   "description": "webpack, eslinters, eslinters, stlylinter, babel, hintrc etc",
   "main": "babel.config.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "build": "webpack",
     "start": "webpack serve --open",
     "server": "node server.js"
+  },
+  "jest": {
+    "resetMocks": false,
+    "testEnvironment": "jsdom"
   },
   "repository": {
     "type": "git",
