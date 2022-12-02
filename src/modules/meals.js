@@ -1,4 +1,4 @@
-import $, { data, status } from 'jquery';
+import $ from 'jquery';
 import { fillDom } from './Dom.js';
 
 const loadmeals = async () => {

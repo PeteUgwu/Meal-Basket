@@ -1,5 +1,4 @@
 import ht2 from '../heart2.png';
-import ht from '../heart.png';
 import countFoods from './countFoods.js';
 import { addlikes, getlikes } from './likes.js';
 import { addPopEvent } from './popup.js';
