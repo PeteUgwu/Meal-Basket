@@ -137,6 +137,7 @@ main .grid-item {
   color: gray;
   padding: 0.5em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .grid-container input[type="button"]:hover {
@@ -258,18 +259,24 @@ textarea {
 .name-field,
 textarea,
 .comment-btn {
-  border: 3px solid rgb(71, 68, 68);
+  border: 1px solid rgb(71, 68, 68);
+  border-radius: 5px;
 }
 
 .comment-btn,
 .add-comment-btn {
   cursor: pointer;
-  padding: 5px;
+  padding: 10px 20px;
   border: 1px solid black;
   box-shadow: 3px 3px;
   font-weight: bold;
   color: darkgrey;
   background-color: #fff;
+  border-radius: 5px;
+}
+
+.comment-sp {
+  font-style: italic;
 }
 
 .add-comment-btn:hover,
