@@ -1,5 +1,5 @@
-import countFoods from './modules/countFoods';
-jest.mock('./modules/countFoods', () => jest.fn());
+import countFoods from '../modules/countFoods';
+jest.mock('../modules/countFoods', () => jest.fn());
 describe('Itmems Counter Test', () => {
   test('Module Resolves', () => {
     countFoods.mockImplementation((data)=>{
