@@ -26,7 +26,7 @@ const addCommentEvent = async () => {
 
     const commentCountSpan = document.querySelector('#comment-counter');
     const commentNumbers = updateCounter();
-    commentCountSpan.textContent = `${commentNumbers}`;  
+    commentCountSpan.textContent = `${commentNumbers}`;
 
     form.reset();
   });
