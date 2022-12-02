@@ -33,7 +33,6 @@ typings/
 .cache
 .next
 .nuxt
-dist
 .cache/
 .vuepress/dist
 .serverless/
