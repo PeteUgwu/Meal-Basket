@@ -74,7 +74,7 @@ Git/GitHub flow, webpack, linters, and workflows.
 
 > link to our deployed project.
 
-- [Live Demo Link](https://github.com/PeteUgwu/Group-capstone/dist/)
+- [Live Demo Link](https://peteugwu.github.io/Group-capstone/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
